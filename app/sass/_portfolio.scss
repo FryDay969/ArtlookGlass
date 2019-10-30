@@ -1,0 +1,112 @@
+.gallery {
+    img {
+        width: 430px;
+        height: 400px;
+        padding: 10px;
+    }
+
+    .table-top {
+        display: none;
+        animation: fadeInFromNone 3s ease-out;
+
+    }
+
+    .shower-door {
+        display: block;
+        animation: fadeInFromNone 3s ease-out;
+    }
+
+    nav {
+        position: absolute;
+        top: 24vh;
+        left: 90%;
+        right: 0px;
+
+        ul {
+            position: relative;
+            padding-left: 0px;
+            background-color: transparent;
+            width: 150px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            li {
+                box-sizing: border-box;
+                position: relative;
+                display: flex;
+                list-style: none;
+                width: 200px;
+                height: auto;
+                padding: 5px 0px 5px 0px;
+
+                cursor: pointer;
+                color: #fff;
+
+
+                a {
+                    display: block;
+                    position: relative;
+                    left: 25px;
+                    width: 25px;
+                    top: 0px;
+                    height: auto;
+                    font-size: 8px;
+                    color: #fff;
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+
+                }
+            }
+
+            // .second-li{
+            //   &:hover{
+            //     .shower-door{
+            //       display: none;
+            //     }
+            //     .table-top{
+            //       display: block;
+            //     }
+            //   }
+            // }
+        }
+
+    }
+
+
+    @keyframes g1 {
+        0% {
+
+            transform: scale(1, 1);
+
+        }
+
+        100% {
+            transform: scale(1.5, 1.5);
+        }
+    }
+
+    ;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}

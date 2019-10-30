@@ -1,0 +1,11 @@
+$fst:#817842;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+) !default;
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           30px !default;
